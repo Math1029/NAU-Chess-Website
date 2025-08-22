@@ -1,0 +1,161 @@
+figure
+{
+    margin: 0;
+}
+
+.club__container,
+.meeting__container
+{
+    width: 100%;
+    max-width: 120rem;
+    margin: auto;
+}
+
+.club__image-module,
+.meeting__image-module
+{
+    vertical-align: middle;
+    width: 100%;
+}
+
+.club__image,
+.meeting__image
+{
+    display: block;
+    margin: auto;
+}
+
+.club__image
+{
+    width: 50%;
+    max-width: 15rem;
+}
+
+.meeting__image
+{
+    width: 100%;
+    max-width: 30rem;
+}
+
+.club__text-module,
+.meeting__text-module
+{
+    margin: 0 1rem;
+    vertical-align: middle;
+}
+
+.text
+{
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+.quote-background
+{
+    width: 100%;
+    max-width: 90rem;
+    /* height: 40vh; */
+    height: 30rem;
+    margin: 1rem auto;
+    background-image: linear-gradient(rgba(0,0,0,0.7) 0% 25%,
+    transparent 50% 60%,rgba(0,0,0,0.7) 90% 100%), 
+        url(images/Chess_Palma.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.quote-text,
+.quote-origin
+{
+    font-family: 'Noto Serif', serif;
+    font-size: 1.5rem;
+    color: white;
+    margin: 0;
+    position: absolute;
+}
+
+.quote-text
+{
+    width: 90%;
+    top: 5%;
+    left: 5%
+}
+
+.quote-origin
+{
+    bottom: 5%;
+    right: 5%;
+}
+
+@media (min-width: 40rem)
+{
+    .club__image-module,
+    .club__text-module
+    {
+        display: inline-block;
+    }
+
+    .club__image-module
+    {
+        margin-left: 1rem;
+        width: 15rem;
+    }
+
+    .club__image
+    {
+        width: 100%;
+        max-width: none;
+    }
+
+    .club__text-module
+    {
+        width: calc(100% - 18.5rem);
+        text-align: left;
+    }
+}
+
+@media (min-width: 45rem)
+{
+    .quote-background
+    {
+        background-image: linear-gradient(rgba(0,0,0,0.7) 0% 10%,
+        transparent 40% 60%,rgba(0,0,0,0.7) 90% 100%), 
+            url(images/Chess_Palma.jpg);
+    }
+}
+
+@media (min-width: 60rem)
+{
+    .meeting__image-module,
+    .meeting__text-module
+    {
+        display: inline-block;
+    }
+
+    .meeting__image-module
+    {
+        margin-right: 1rem;
+        width: 30rem;
+    }
+
+    .meeting__image
+    {
+        width: 100%;
+        max-width: none;
+    }
+
+    .meeting__text-module
+    {
+        width: calc(100% - 33.5rem);
+        text-align: right;
+    }
+}
+
+@media (min-width: 75rem)
+{
+    .quote-background
+    {
+        height: 50vh;
+    }
+}
