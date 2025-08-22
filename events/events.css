@@ -1,0 +1,148 @@
+.meeting__image-module
+{
+    vertical-align: middle;
+    width: 100%;
+}
+
+.meeting__image
+{
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 40rem;
+}
+
+.gathering__container
+{
+    padding: 1rem;
+}
+
+.gathering__image-module,
+.gathering__text-module
+{
+    vertical-align: middle;
+}
+
+.gathering__image-first
+{
+    display: block;
+    width: 100%;
+    max-width: 10rem;
+    margin: auto;
+}
+
+.gathering__image-second
+{
+    display: none;
+}
+
+.gathering__text
+{
+    text-align: center;
+    margin: 0;
+}
+
+.gathering__text
+{
+    font-size: 1rem;
+    color: #013220;
+}
+
+.notes__list
+{
+    margin: auto;
+    width: auto;
+    max-width: 50rem;
+}
+
+.notes__item
+{
+    font-size: 1rem;
+}
+
+.events__table
+{
+    border-collapse: collapse;
+    margin: 1rem auto;
+    width: 100%;
+    max-width: 100rem;
+}
+
+.events__header-date,
+.events__header-name,
+.events__header-location,
+.events__main-date,
+.events__main-name,
+.events__main-location
+{
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem 0.5rem;
+}
+
+.events__header-date,
+.events__header-name,
+.events__header-location
+{
+    font-weight: bold;
+    color: #003466;
+}
+
+.events__main-date,
+.events__main-name,
+.events__main-location
+{
+    font-weight: normal;
+}
+
+.events__main-location,
+.events__header-location
+{
+    display: none;
+}
+
+@media (min-width: 50rem)
+{
+    .events__main-location,
+    .events__header-location
+    {
+        display: table-cell;
+    }
+}
+
+@media (min-width: 45rem)
+{
+    .gathering__container
+    {
+        text-align: center;
+    }
+
+    .gathering__image-module,
+    .gathering__text-module
+    {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .gathering__image-module
+    {
+        width: 10rem;
+    }
+
+    .gathering__text-module
+    {
+        width: 20rem;
+    }
+
+    .gathering__image-first
+    {
+        width: 100%;
+        max-width: none;
+    }
+
+    .gathering__image-second
+    {
+        display: block;
+        width: 100%;
+    }
+}
